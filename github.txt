@@ -1,0 +1,190 @@
+GitHub
+
+https://github.com/
+
+Create an account at GitHub.
+
+Read:
+
+http://help.github.com/win-set-up-git/
+
+http://www.ralfebert.de/blog/tools/git_screencast/
+
+http://scottr.org/presentations/git-in-5-minutes/
+
+-------------------------------------------------------------
+
+After creating an account, create a remote repository.
+The following is what I did for MagicBoxes.
+
+Create a New Repository
+Project Name: MagicBoxes
+Description: 
+On Dart
+
+Magic Boxes in Dart
+by Dzenan Ridjanovic
+2011-12-09
+
+Spirals on learning Dart.
+
+Based on:
+Magic Boxes [in Java]
+http://code.google.com/p/magic-boxes/ 
+
+Global setup:
+ Set up git
+  git config --global user.name "Dzenan Ridjanovic"
+  git config --global user.email dzenanr@gmail.com
+      
+Next steps:
+  mkdir MagicBoxes 
+  cd MagicBoxes 
+  git init
+  touch README 
+  git add README 
+  git commit -m 'first commit'
+  git remote add origin git@github.com:dzenanr/MagicBoxes.git
+  git push -u origin master   
+
+-------------------------------------------------------------
+
+Git with Git Bash
+
+Clone a remote repository into a local repository.
+
+cd git/dart/learn
+Read only:
+git clone git://github.com/dzenanr/MagicBoxes.git
+Read+Write:
+git clone git@github.com:dzenanr/MagicBoxes.git
+
+Get the latest changes from the remote repository
+
+git pull
+git pull origin master
+
+-------------------------------------------------------------
+
+Configure yourself (once for all repositories)
+
+git config --global user.name "Your Name"
+git config --global user.email you@gmail.com
+
+Create a local repository
+
+cd git
+ls
+cd dart
+ls
+cd learn
+
+or
+
+cd git/dart/learn
+
+mkdir YourBoxes
+cd YourBoxes
+git init
+touch README.txt
+git add README.txt
+git commit -m 'first commit'
+git remote add origin git@github.com:accountname/YourBoxes.git
+git push -u origin master
+Enter passphrase for key ... :
+
+Work with a local repository
+
+cd git/dart/learn/YourBoxes
+
+git add .
+or
+git add file
+or
+git rm file
+or
+git add -u (to remove all)
+
+git commit -m "state briefly changes"
+or
+git commit -a -m "state briefly changes"
+
+git status
+
+git push
+git push origin master
+Enter passphrase for key ... :
+
+git status
+
+
+Ignoring files
+
+http://help.github.com/ignore-files/
+
+create .gitignore in MagicBoxes folder
+add 
+MagicBoxes.dart.app.js
+*~
+to exclude JavaScript file that is already in the repository:
+git rm --cached MagicBoxes.dart.app.js
+
+
+Tagging for versions (spirals)
+
+http://learn.github.com/p/tagging.html
+
+git tag
+git tag -a s00 -m 'spiral 00'
+git tag
+
+To push tags to the remote repository:
+
+git push --tags
+Enter passphrase for key ... :
+
+
+Switching from master to spiral
+
+
+git checkout s01
+
+Switching from spiral to master
+
+to exclude js:
+git checkout MagicBoxes.dart.app.js
+or (see http://scottr.org/presentations/git-in-5-minutes/)
+git stash
+
+git checkout master
+
+
+Branches
+
+git checkout -b topic-name-1 master
+git checkout -b topic-name-2 master
+git checkout topic-name-1
+git checkout topic-name-2
+
+git checkout master
+git merge topic-name-1 
+git branch -d topic-name-1
+
+git merge topic-name-2
+resolve conflicts
+git status
+git commit -a (describe the merge resolution here)
+git status
+git branch -d topic-name-2
+
+to loose all changes after the last commit:
+git reset --hard
+
+to work temporarily on a branch and then delete it
+git checkout -b temp master
+...
+git branch -D temp 
+
+
+
+

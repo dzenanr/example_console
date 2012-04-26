@@ -1,18 +1,18 @@
-fibonacci01(DartConsole dartConsole) {
+fibonacci1(DartConsole dartConsole) {
   int count = 10;
   String result = fibonacciIteration(count);
   dartConsole.line('Fibonacci with iteration: $count');
   dartConsole.line(result);
 }
 
-fibonacci02(DartConsole dartConsole) {
+fibonacci2(DartConsole dartConsole) {
   int count = 10;
   int result = fibonacciRecursion(count);
   dartConsole.line('Fibonacci with recursion: $count');
   dartConsole.line('$result');
 }
 
-fibonacci03(DartConsole dartConsole) {
+fibonacci3(DartConsole dartConsole) {
   var map = new Map();
   map[0] = 0;
   map[1] = 1;
@@ -22,7 +22,7 @@ fibonacci03(DartConsole dartConsole) {
   map.forEach((k,v) => dartConsole.line('$k: $v'));
 }
 
-fibonacci04(DartConsole dartConsole) {
+fibonacci4(DartConsole dartConsole) {
   int count = 10;
   var map = fibonacciRecursionMapClosure(count);
   dartConsole.line('Fibonacci with recursion, map and closure: $count');

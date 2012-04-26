@@ -3,9 +3,9 @@
 #source('InputSection.dart');
 #source('OutputSection.dart');
 #source('IterationExamples.dart');
-#source('IterationUse.dart');
+#source('IterationUses.dart');
 #source('FibonacciExamples.dart');
-#source('FibonacciUse.dart');
+#source('FibonacciUses.dart');
 
 class DartConsole extends ConsoleSection {
 
@@ -57,23 +57,23 @@ class DartConsole extends ConsoleSection {
   void selectExample(String subject, String example) {
     if (subject == '1') {
       if (example == '1') {
-        iteration01(this);
+        iteration1(this);
       } else if (example == '2') {
-        iteration02(this);
+        iteration2(this);
       } else if (example == '3') {
-        iteration03(this);
+        iteration3(this);
       } else {
         line('Wrong example!');
       }
     } else if (subject == '2') {
       if (example == '1') {
-        fibonacci01(this);
+        fibonacci1(this);
       } else if (example == '2') {
-        fibonacci02(this);
+        fibonacci2(this);
       } else if (example == '3') {
-        fibonacci03(this);
+        fibonacci3(this);
       } else if (example == '4') {
-        fibonacci04(this);
+        fibonacci4(this);
       } else {
         line('Wrong example!');
       }

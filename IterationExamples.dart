@@ -1,9 +1,10 @@
-
+// Based on
+// http://blog.sethladd.com/2011/12/lists-and-arrays-in-dart.html
 
 /**
- * Iteration with while.
+ * Iteration with while loop.
  */
-String iterationWithWhile(List list) {
+String iterationWithWhileLoop(List list) {
   String result = '';
   var i = 0;
   while (i < list.length) {
@@ -14,9 +15,9 @@ String iterationWithWhile(List list) {
 }
 
 /**
- * Iteration with for index.
+ * Iteration with for loop.
  */
-String iterationWithForIndex(List list) {
+String iterationWithForLoop(List list) {
   String result = '';
   for (var i = 0; i < list.length; i++) {
     result = '$result ${list[i]}';
@@ -25,9 +26,9 @@ String iterationWithForIndex(List list) {
 }
 
 /**
- * Iteration with for each.
+ * Iteration with foreach.
  */
-String iterationWithForEach(List list) {
+String iterationWithForeach(List list) {
   String result = '';
   for (var e in list) {
     result = '$result $e';

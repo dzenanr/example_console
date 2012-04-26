@@ -1,6 +1,7 @@
 class InputSection {
 
-  String subject;
+  String subject = '';
+  String example = '';
 
   InputSection(DartConsole dartConsole) {
     InputElement subjectInputField = document.query('#subjectInputField');

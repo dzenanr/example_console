@@ -1,13 +1,25 @@
 class InputSection {
-  
+
+  String subject;
+
   InputSection(DartConsole dartConsole) {
-    InputElement inputField = document.query('#inputField');
-    inputField.on.change.add((Event e) {
-      String input = inputField.value.trim();
-      dartConsole.sline('Input: ' + input);
-      dartConsole.choice(input);
-      dartConsole.prompt();
+    InputElement subjectInputField = document.query('#subjectInputField');
+    subjectInputField.on.change.add((Event e) {
+      subject = subjectInputField.value.trim();
+      dartConsole.sline('Subject Input: ' + subject);
+      dartConsole.displaySubjectTitle(subject);
+      dartConsole.promptExamples(subject);
+    });
+
+    InputElement exampleInputField = document.query('#exampleInputField');
+    exampleInputField.on.change.add((Event e) {
+      String example = exampleInputField.value.trim();
+      dartConsole.sline('Subject Input: ' + subject);
+      dartConsole.displaySubjectTitle(subject);
+      dartConsole.sline('Example Input: ' + example);
+      dartConsole.selectExample(subject, example);
+      dartConsole.promptExamples(subject);
     });
   }
-  
+
 }

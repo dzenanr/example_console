@@ -80,7 +80,6 @@ class DartConsole extends ConsoleSection {
     } else {
       line('Wrong subject!');
     }
-
   }
 
 }

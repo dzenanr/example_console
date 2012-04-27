@@ -2,9 +2,9 @@
 // http://blog.sethladd.com/2011/12/lists-and-arrays-in-dart.html
 
 /**
- * Iteration with while loop.
+ * Iteration with while.
  */
-String iterationWithWhileLoop(List list) {
+String iterationWhile(List list) {
   String result = '';
   var i = 0;
   while (i < list.length) {
@@ -15,9 +15,9 @@ String iterationWithWhileLoop(List list) {
 }
 
 /**
- * Iteration with for loop.
+ * Iteration with for.
  */
-String iterationWithForLoop(List list) {
+String iterationFor(List list) {
   String result = '';
   for (var i = 0; i < list.length; i++) {
     result = '$result ${list[i]}';
@@ -26,12 +26,97 @@ String iterationWithForLoop(List list) {
 }
 
 /**
- * Iteration with foreach.
+ * Iteration with for in.
  */
-String iterationWithForeach(List list) {
+String iterationForIn(List list) {
   String result = '';
   for (var e in list) {
     result = '$result $e';
+  }
+  return result;
+}
+
+/**
+ * Iteration with do.
+ */
+String iterationDo(List list) {
+  String result = '';
+  var i = 0;
+  do {
+    result = '$result ${list[i]}';
+    i += 1;
+  } while (i < list.length);
+  return result;
+}
+
+/**
+ * Iteration with iterator.
+ */
+String iterationIterator(List list) {
+  String result = '';
+  Iterator i = list.iterator();
+  while (i.hasNext()) {
+    result = '$result ${i.next()}';
+  }
+  return result;
+}
+
+/**
+ * Iteration with for each.
+ */
+String iterationForEach(List list) {
+  String result = '';
+  list.forEach((e) => result = '$result $e');
+  return result;
+}
+
+/**
+ * Iteration with for on text.
+ */
+String iterationForString(String text) {
+  String result = '';
+  for (var i = 0; i < text.length; i++) {
+    result = '$result ${text[i]}';
+  }
+  return result;
+}
+
+/**
+ * Iteration with for each on map.
+ */
+String iterationForEachMap(Map map) {
+  String result = '';
+  map.forEach((k, v) => result = '$result $k: $v');
+  return result;
+}
+
+/**
+ * Iteration with for each on map key.
+ */
+String iterationForEachMapKey(Map map) {
+  String result = '';
+  var keys = map.getKeys();
+  keys.forEach((k) => result = '$result $k');
+  return result;
+}
+
+/**
+ * Iteration with for each on map value.
+ */
+String iterationForEachMapValue(Map map) {
+  String result = '';
+  var values = map.getValues();
+  values.forEach((v) => result = '$result $v');
+  return result;
+}
+
+/**
+ * Iteration with for in on text.
+ */
+String iterationForInString(String text) {
+  String result = '';
+  for (var v in text) {
+    result = '$result $v}';
   }
   return result;
 }

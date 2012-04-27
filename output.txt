@@ -1,112 +1,58 @@
 Dart Examples
 
-Input Subject 1 or 2: 
+Input Subject Number: 
+    0. All Examples
     1. Dart Iteration
     2. Fibonacci Sequence
     
 
-Subject Input: 1
-Iteration Examples
+Subject Input: 0
+All Examples
 
-Input Example 1, 2 or 3: 
-      1. Iteration with while
-      2. Iteration with for index
-      3. Iteration with for each
-      
-
-Subject Input: 1
-Iteration Examples
-
-Example Input: 1
 Iteration with while: [7, 12, 29, 57, 88, 111, 164, 222, 301]
  7 12 29 57 88 111 164 222 301
 
-Input Example 1, 2 or 3: 
-      1. Iteration with while
-      2. Iteration with for index
-      3. Iteration with for each
-      
-
-Subject Input: 1
-Iteration Examples
-
-Example Input: 2
-Iteration with for index: [7, 12, 29, 57, 88, 111, 164, 222, 301]
+Iteration with for (index): [7, 12, 29, 57, 88, 111, 164, 222, 301]
  7 12 29 57 88 111 164 222 301
 
-Input Example 1, 2 or 3: 
-      1. Iteration with while
-      2. Iteration with for index
-      3. Iteration with for each
-      
+Iteration with for in: [7, 12, 29, 57, 88, 111, 164, 222, 301]
+ 7 12 29 57 88 111 164 222 301
 
-Subject Input: 1
-Iteration Examples
+Iteration with do: [7, 12, 29, 57, 88, 111, 164, 222, 301]
+ 7 12 29 57 88 111 164 222 301
 
-Example Input: 3
+Iteration with iterator: [7, 12, 29, 57, 88, 111, 164, 222, 301]
+ 7 12 29 57 88 111 164 222 301
+
 Iteration with for each: [7, 12, 29, 57, 88, 111, 164, 222, 301]
  7 12 29 57 88 111 164 222 301
 
-Input Example 1, 2 or 3: 
-      1. Iteration with while
-      2. Iteration with for index
-      3. Iteration with for each
-      
+Iteration with for on text: Sarajevo
+ S a r a j e v o
 
-Subject Input: 1
-Iteration Examples
+Iteration with for each on map: {gold: 1, silver: 2, bronze: 3}
+ gold: 1 silver: 2 bronze: 3
 
-Example Input: 4
-Wrong example!
+Iteration with for each on map key: {gold: 1, silver: 2, bronze: 3}
+ gold silver bronze
 
-Input Example 1, 2 or 3: 
-      1. Iteration with while
-      2. Iteration with for index
-      3. Iteration with for each
-      
+Iteration with for each on map value: {gold: 1, silver: 2, bronze: 3}
+ 1 2 3
 
-Subject Input: 2
-Fibonacci Examples
+Iteration with do on empty list: []
+Error: IndexOutOfRangeException: 0
 
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      
+Iteration with for in on text: Sarajevo
+Error: NoSuchMethodException : method not found: 'iterator'
+Receiver: Sarajevo
+Arguments: []
 
-Subject Input: 2
-Fibonacci Examples
-
-Example Input: 1
 Fibonacci with iteration: 10
 0 1 1 2 3 5 8 13 21 34 55
 
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      
-
-Subject Input: 2
-Fibonacci Examples
-
-Example Input: 2
 Fibonacci with recursion: 10
 55
 
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      
-
-Subject Input: 2
-Fibonacci Examples
-
-Example Input: 3
 Fibonacci with recursion and map: 10
 0: 0
 1: 1
@@ -120,17 +66,6 @@ Fibonacci with recursion and map: 10
 9: 34
 10: 55
 
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      
-
-Subject Input: 2
-Fibonacci Examples
-
-Example Input: 4
 Fibonacci with recursion, map and closure: 10
 0: 0
 1: 1
@@ -143,23 +78,3 @@ Fibonacci with recursion, map and closure: 10
 8: 21
 9: 34
 10: 55
-
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      
-
-Subject Input: 2
-Fibonacci Examples
-
-Example Input: 5
-Wrong example!
-
-Input Example 1, 2, 3 or 4: 
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-            

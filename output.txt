@@ -47,6 +47,9 @@ Error: NoSuchMethodException : method not found: 'iterator'
 Receiver: Sarajevo
 Arguments: []
 
+Iteration with for in on split text: Sarajevo
+ S a r a j e v o
+
 Fibonacci with iteration: 10
 0 1 1 2 3 5 8 13 21 34 55
 

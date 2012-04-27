@@ -51,6 +51,7 @@ class DartConsole extends ConsoleSection {
      10. Iteration with for each on map value
      11. Iteration with do on empty list
      12. Iteration with for in on text
+     13. Iteration with for in on split text
       ''';
       line(examples);
     } else if (subject == '2') {
@@ -95,6 +96,8 @@ class DartConsole extends ConsoleSection {
           iteration11(this);
         } else if (example == '12') {
           iteration12(this);
+        } else if (example == '13') {
+          iteration13(this);
         } else {
           line('Wrong example!');
         }
@@ -131,6 +134,7 @@ class DartConsole extends ConsoleSection {
     iteration10(this);
     iteration11(this);
     iteration12(this);
+    iteration13(this);
     // Fibonacci
     fibonacci1(this);
     fibonacci2(this);

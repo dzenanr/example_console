@@ -89,3 +89,14 @@ iteration12(DartConsole dartConsole) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }
+
+iteration13(DartConsole dartConsole) {
+  var city = "Sarajevo";
+  dartConsole.sline('Iteration with for in on split text: $city');
+  try {
+    String result = iterationForInSplitString(city);
+    dartConsole.line(result);
+  } catch (final Exception e) {
+    dartConsole.line('Error: ${e.toString()}');
+  }
+}

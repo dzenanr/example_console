@@ -116,7 +116,20 @@ String iterationForEachMapValue(Map map) {
 String iterationForInString(String text) {
   String result = '';
   for (var v in text) {
-    result = '$result $v}';
+    result = '$result $v';
+  }
+  return result;
+}
+
+
+/**
+ * Iteration with for in on split text.
+ * Proposed by Richard Griffith.
+ */
+String iterationForInSplitString(String text) {
+  String result = '';
+  for (var v in text.splitChars()) {
+    result = '$result $v';
   }
   return result;
 }

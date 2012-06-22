@@ -16,10 +16,10 @@ class DartConsole extends ConsoleSection {
   void promptSubjects() {
     sline('Input Subject Number: ');
     String subjects = '''
-    0. All Examples
-    1. Dart Iteration
-    2. Fibonacci Sequence
-    ''';
+      0. All Examples
+       1. Dart Iteration
+       2. Fibonacci Sequence
+      ''';
     line(subjects);
   }
 
@@ -39,29 +39,29 @@ class DartConsole extends ConsoleSection {
     } else if (subject == '1') {
       sline('Input Example Number: ');
       String examples = '''
-      1. Iteration with while
-      2. Iteration with for (index)
-      3. Iteration with for in
-      4. Iteration with do
-      5. Iteration with iterator
-      6. Iteration with for each
-      7. Iteration with for on text
-      8. Iteration with for each on map
-      9. Iteration with for each on map key
-     10. Iteration with for each on map value
-     11. Iteration with do on empty list
-     12. Iteration with for in on text
-     13. Iteration with for in on split text
-      ''';
+        1. Iteration with while
+         2. Iteration with for (index)
+         3. Iteration with for in
+         4. Iteration with do
+         5. Iteration with iterator
+         6. Iteration with for each
+         7. Iteration with for on text
+         8. Iteration with for each on map
+         9. Iteration with for each on map key
+        10. Iteration with for each on map value
+        11. Iteration with do on empty list
+        12. Iteration with for in on text
+        13. Iteration with for in on split text
+        ''';
       line(examples);
     } else if (subject == '2') {
       sline('Input Example Number: ');
       String examples = '''
-      1. Fibonacci with iteration
-      2. Fibonacci with recursion
-      3. Fibonacci with recursion and map
-      4. Fibonacci with recursion, map and closure
-      ''';
+        1. Fibonacci with iteration
+         2. Fibonacci with recursion
+         3. Fibonacci with recursion and map
+         4. Fibonacci with recursion, map and closure
+        ''';
       line(examples);
     } else {
       line('Wrong subject!');

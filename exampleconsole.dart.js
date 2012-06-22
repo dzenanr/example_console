@@ -1116,11 +1116,11 @@ $$.DartConsole = {"":
   else {
     if ($.eqB(subject, '1')) {
       this.sline$1('Input Example Number: ');
-      this.line$1('      1. Iteration with while\n      2. Iteration with for (index)\n      3. Iteration with for in\n      4. Iteration with do\n      5. Iteration with iterator\n      6. Iteration with for each\n      7. Iteration with for on text\n      8. Iteration with for each on map\n      9. Iteration with for each on map key\n     10. Iteration with for each on map value\n     11. Iteration with do on empty list\n     12. Iteration with for in on text\n     13. Iteration with for in on split text\n      ');
+      this.line$1('        1. Iteration with while\n         2. Iteration with for (index)\n         3. Iteration with for in\n         4. Iteration with do\n         5. Iteration with iterator\n         6. Iteration with for each\n         7. Iteration with for on text\n         8. Iteration with for each on map\n         9. Iteration with for each on map key\n        10. Iteration with for each on map value\n        11. Iteration with do on empty list\n        12. Iteration with for in on text\n        13. Iteration with for in on split text\n        ');
     } else {
       if ($.eqB(subject, '2')) {
         this.sline$1('Input Example Number: ');
-        this.line$1('      1. Fibonacci with iteration\n      2. Fibonacci with recursion\n      3. Fibonacci with recursion and map\n      4. Fibonacci with recursion, map and closure\n      ');
+        this.line$1('        1. Fibonacci with iteration\n         2. Fibonacci with recursion\n         3. Fibonacci with recursion and map\n         4. Fibonacci with recursion, map and closure\n        ');
       } else {
         this.line$1('Wrong subject!');
         this.promptSubjects$0();
@@ -1139,7 +1139,7 @@ $$.DartConsole = {"":
  },
  promptSubjects$0: function() {
   this.sline$1('Input Subject Number: ');
-  this.line$1('    0. All Examples\n    1. Dart Iteration\n    2. Fibonacci Sequence\n    ');
+  this.line$1('      0. All Examples\n       1. Dart Iteration\n       2. Fibonacci Sequence\n      ');
  },
  displayTitle$0: function() {
   this.line$1('Dart Examples');

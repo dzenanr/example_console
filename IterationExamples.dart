@@ -115,12 +115,11 @@ String iterationForEachMapValue(Map map) {
  */
 String iterationForInString(String text) {
   String result = '';
-  for (var v in text) {
-    result = '$result $v';
-  }
+  //for (var v in text) {
+  //  result = '$result $v';
+  //}
   return result;
 }
-
 
 /**
  * Iteration with for in on split text.

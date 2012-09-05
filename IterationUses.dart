@@ -74,7 +74,7 @@ iteration11(DartConsole dartConsole) {
   try {
     String result = iterationDo(list);
     dartConsole.line(result);
-  } catch (final IndexOutOfRangeException e) {
+  } on IndexOutOfRangeException catch (e) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }
@@ -85,7 +85,7 @@ iteration12(DartConsole dartConsole) {
   try {
     String result = iterationForInString(city);
     dartConsole.line(result);
-  } catch (final Exception e) {
+  } on Exception catch (e) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }
@@ -96,7 +96,7 @@ iteration13(DartConsole dartConsole) {
   try {
     String result = iterationForInSplitString(city);
     dartConsole.line(result);
-  } catch (final Exception e) {
+  } on Exception catch (e) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }

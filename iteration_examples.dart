@@ -42,10 +42,12 @@ String iterationForIn(List list) {
 String iterationDo(List list) {
   String result = '';
   var i = 0;
-  do {
-    result = '$result ${list[i]}';
-    i += 1;
-  } while (i < list.length);
+  if (list.length > 0) {
+    do {
+      result = '$result ${list[i]}';
+      i += 1;
+    } while (i < list.length);
+  }
   return result;
 }
 

@@ -1,11 +1,11 @@
 #import('dart:html');
-#source('ConsoleSection.dart');
-#source('InputSection.dart');
-#source('OutputSection.dart');
-#source('IterationExamples.dart');
-#source('IterationUses.dart');
-#source('FibonacciExamples.dart');
-#source('FibonacciUses.dart');
+#source('console_section.dart');
+#source('input_section.dart');
+#source('output_section.dart');
+#source('iteration_examples.dart');
+#source('iteration_uses.dart');
+#source('fibonacci_examples.dart');
+#source('fibonacci_uses.dart');
 
 class DartConsole extends ConsoleSection {
 

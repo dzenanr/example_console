@@ -1,8 +1,9 @@
-// Based on 
-// http://en.literateprograms.org/Fibonacci_numbers_(Python) 
+// Based on
+// http://en.literateprograms.org/Fibonacci_numbers_(Python)
 // http://en.wikipedia.org/wiki/Memoization
+// http://dartery.blogspot.ca/2012/09/memoizing-functions-in-dart.html
 
-/** 
+/**
  * Iteration with memory.
  */
 String fibonacciIteration(int t) {
@@ -11,17 +12,17 @@ String fibonacciIteration(int t) {
   while (n < t) {
     f = a + b;
     result = '$result $f';
-    a = b; 
+    a = b;
     b = f;
     n = n + 1;
   }
   return result;
 }
 
-/** 
+/**
  * Pure recursion.
- * It does not return a sequence of numbers (no memoization), 
- * but only the last number. 
+ * It does not return a sequence of numbers (no memoization),
+ * but only the last number.
  */
 int fibonacciRecursion(int t) {
   if (t == 0) {
@@ -33,10 +34,10 @@ int fibonacciRecursion(int t) {
   }
 }
 
-/** 
+/**
  * Updating a function parameter is not functional programming.
  * http://www.defmacro.org/ramblings/fp.html
- * http://try.dartlang.org/s/Vno9 
+ * http://try.dartlang.org/s/Vno9
  */
 int fibonacciRecursionMap(int n, Map map) {
   if (!map.containsKey(n)) {
@@ -45,12 +46,12 @@ int fibonacciRecursionMap(int n, Map map) {
   return map[n];
 }
 
-/** 
- * A closure is any function which closes over the environment in which it is defined. 
+/**
+ * A closure is any function which closes over the environment in which it is defined.
  * This means that it can access variables not in its parameter list.
  * Wikipedia link : http://en.wikipedia.org/wiki/Closure_(computer_science) .
- * A closure (also lexical closure or function closure) is a function together 
- * with a referencing environment for the non-local variables of that function. 
+ * A closure (also lexical closure or function closure) is a function together
+ * with a referencing environment for the non-local variables of that function.
  * A closure allows a function to access variables outside its immediate lexical scope.
  * Simple example: http://try.dartlang.org/s/l_E8 .
  * http://www.dartlang.org/language-tour/#functions

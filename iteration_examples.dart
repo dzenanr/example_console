@@ -57,7 +57,7 @@ String iterationDo(List list) {
 String iterationIterator(List list) {
   String result = '';
   Iterator i = list.iterator();
-  while (i.hasNext()) {
+  while (i.hasNext) {
     result = '$result ${i.next()}';
   }
   return result;
@@ -97,7 +97,7 @@ String iterationForEachMap(Map map) {
  */
 String iterationForEachMapKey(Map map) {
   String result = '';
-  var keys = map.getKeys();
+  var keys = map.keys;
   keys.forEach((k) => result = '$result $k');
   return result;
 }
@@ -107,7 +107,7 @@ String iterationForEachMapKey(Map map) {
  */
 String iterationForEachMapValue(Map map) {
   String result = '';
-  var values = map.getValues();
+  var values = map.values;
   values.forEach((v) => result = '$result $v');
   return result;
 }

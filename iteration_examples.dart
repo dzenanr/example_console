@@ -1,3 +1,5 @@
+part of example_console;
+
 // Based on
 // http://blog.sethladd.com/2011/12/lists-and-arrays-in-dart.html
 

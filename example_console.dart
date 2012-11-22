@@ -1,3 +1,5 @@
+library example_console;
+
 import 'dart:html';
 
 part 'console_section.dart';

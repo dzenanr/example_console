@@ -1,3 +1,5 @@
+part of example_console;
+
 // Based on
 // http://en.literateprograms.org/Fibonacci_numbers_(Python)
 // http://en.wikipedia.org/wiki/Memoization

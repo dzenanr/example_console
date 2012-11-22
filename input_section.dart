@@ -1,3 +1,5 @@
+part of example_console;
+
 class InputSection {
 
   String subject = '';

@@ -1,3 +1,5 @@
+part of example_console;
+
 fibonacci1(DartConsole dartConsole) {
   int count = 10;
   String result = fibonacciIteration(count);

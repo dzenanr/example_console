@@ -1,3 +1,5 @@
+part of example_console;
+
 iteration1(DartConsole dartConsole) {
   var list = [7, 12, 29, 57, 88, 111, 164, 222, 301];
   String result = iterationWhile(list);
@@ -74,7 +76,7 @@ iteration11(DartConsole dartConsole) {
   try {
     String result = iterationDo(list);
     dartConsole.line(result);
-  } on IndexOutOfRangeException catch (e) {
+  } on RangeException catch (e) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }

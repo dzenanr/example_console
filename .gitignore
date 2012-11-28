@@ -1,3 +1,6 @@
-example_console.dart.js
-example_console.dart.js.map
+.children
+packages
+*.js
+*.js.deps
+*.js.map
 *~

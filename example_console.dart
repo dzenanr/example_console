@@ -120,6 +120,7 @@ class DartConsole extends ConsoleSection {
         break;
       default:
         line('Wrong subject!');
+        break;
     }
   }
 

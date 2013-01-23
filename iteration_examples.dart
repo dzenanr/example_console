@@ -58,9 +58,9 @@ String iterationDo(List list) {
  */
 String iterationIterator(List list) {
   String result = '';
-  Iterator i = list.iterator();
-  while (i.hasNext) {
-    result = '$result ${i.next()}';
+  Iterator i = list.iterator;
+  while (i.moveNext()) {
+    result = '$result ${i.current}';
   }
   return result;
 }

@@ -7,7 +7,7 @@ class InputSection {
 
   InputSection(DartConsole dartConsole) {
     InputElement subjectInputField = document.query('#subjectInputField');
-    subjectInputField.on.change.add((Event e) {
+    subjectInputField.onChange.listen((Event e) {
       subject = subjectInputField.value.trim();
       dartConsole.sline('Subject Input: $subject');
       dartConsole.displaySubjectTitle(subject);
@@ -15,7 +15,7 @@ class InputSection {
     });
 
     InputElement exampleInputField = document.query('#exampleInputField');
-    exampleInputField.on.change.add((Event e) {
+    exampleInputField.onChange.listen((Event e) {
       example = exampleInputField.value.trim();
       dartConsole.sline('Subject Input: $subject');
       dartConsole.displaySubjectTitle(subject);

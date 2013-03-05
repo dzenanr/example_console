@@ -131,7 +131,7 @@ String iterationForInString(String text) {
  */
 String iterationForInSplitString(String text) {
   String result = '';
-  for (var v in text.splitChars()) {
+  for (var v in text.split('')) {
     result = '$result $v';
   }
   return result;

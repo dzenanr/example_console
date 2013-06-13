@@ -76,7 +76,7 @@ iteration11(DartConsole dartConsole) {
   try {
     String result = iterationDo(list);
     dartConsole.line(result);
-  } on RangeException catch (e) {
+  } on Exception catch (e) {
     dartConsole.line('Error: ${e.toString()}');
   }
 }

@@ -1,6 +1,7 @@
 #Example Console
 
-##Categories##: education, control structures, functions.
+##Categories##
+education, control structures, functions.
 
 ##Description##
 In teaching programming a console with interactive communication between a

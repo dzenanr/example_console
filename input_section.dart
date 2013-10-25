@@ -6,7 +6,7 @@ class InputSection {
   String example = '';
 
   InputSection(DartConsole dartConsole) {
-    InputElement subjectInputField = document.query('#subjectInputField');
+    InputElement subjectInputField = document.querySelector('#subjectInputField');
     subjectInputField.onChange.listen((Event e) {
       subject = subjectInputField.value.trim();
       dartConsole.sline('Subject Input: $subject');
@@ -14,7 +14,7 @@ class InputSection {
       dartConsole.promptExamples(subject);
     });
 
-    InputElement exampleInputField = document.query('#exampleInputField');
+    InputElement exampleInputField = document.querySelector('#exampleInputField');
     exampleInputField.onChange.listen((Event e) {
       example = exampleInputField.value.trim();
       dartConsole.sline('Subject Input: $subject');

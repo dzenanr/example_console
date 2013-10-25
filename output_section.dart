@@ -5,7 +5,7 @@ class OutputSection {
   TextAreaElement outputArea;
 
   OutputSection() {
-    outputArea = document.query('#outputArea');
+    outputArea = document.querySelector('#outputArea');
   }
 
   void line(String text) {

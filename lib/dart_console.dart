@@ -1,14 +1,4 @@
-library example_console;
-
-import 'dart:html';
-
-part 'console_section.dart';
-part 'input_section.dart';
-part 'output_section.dart';
-part 'iteration_examples.dart';
-part 'iteration_uses.dart';
-part 'fibonacci_examples.dart';
-part 'fibonacci_uses.dart';
+part of example_console;
 
 class DartConsole extends ConsoleSection {
 
@@ -146,10 +136,4 @@ class DartConsole extends ConsoleSection {
     fibonacci4(this);
   }
 
-}
-
-void main() {
-  DartConsole dartConsole = new DartConsole();
-  dartConsole.displayTitle();
-  dartConsole.promptSubjects();
 }
